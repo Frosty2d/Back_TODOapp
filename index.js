@@ -32,7 +32,3 @@ db.once('connected', () => {
  console.log('Database Connected');
 })
 const Tarefa = require('./models/tarefa');
-
-Tarefa.updateMany({ prioridade: { $exists: false } }, { $set: { prioridade: 'normal' } })
-  .then(() => console.log("Tarefas atualizadas"))
-  .catch(console.error);
