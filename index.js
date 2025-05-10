@@ -31,4 +31,3 @@ db.on('error', (error) => {
 db.once('connected', () => {
  console.log('Database Connected');
 })
-const Tarefa = require('./models/tarefa');
